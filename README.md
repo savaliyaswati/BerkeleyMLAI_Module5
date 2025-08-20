@@ -1,94 +1,126 @@
-# Berkely Professional Certificate in ML/AI <br> Practical Application-1(Module-5/Assignment 5.1) : <br>Will the Customer Accept the Coupon?
+Berkeley Professional Certificate in ML/AI <br> Practical Application-1 (Module-5 / Assignment 5.1): <br> Will the Customer Accept the Coupon?
 
-The goal of this project is to use Probability Distributions and Visualizations and distinguish between customers who accepted a driving coupon versus those who did not. The project also involves applying data analysis, plotting, statistical summarization, and data visualization skills and techniques to a machine learning problem.
+This project investigates customer behavior in response to different coupon offerings. Specifically, the goal is to apply concepts of Probability Distributions, Exploratory Data Analysis (EDA), and Visualization techniques to distinguish between customers who accepted a driving coupon and those who did not. The assignment focuses on applying data cleaning, statistical summarization, and visualization skills to better understand patterns of coupon acceptance, which has direct implications for marketing strategies, consumer engagement, and targeted promotions in real-world business settings.
 
-# Note about the Files, Folder and Dataset...
-1> The Folder Structure for this Project is as below under the repository: "BerkeleyMLAI-Module5-Practical-Exercises"
+Files, Folder, and Dataset Information
 
-![image](https://github.com/user-attachments/assets/d6d15698-033a-48a6-b561-50a7d9ad8f16)
+Repository Structure: The project is maintained under the repository "BerkeleyMLAI-Module5-Practical-Exercises". The folder structure is organized to separate raw data, processed outputs, and code artifacts.
 
-2> The Dataset used for analysis is provided here:[Link to Coupons Dataset](data/coupons.csv) (Dataset is comprised of 12684 records and 26 Column Headers)<br>
-3> The coding language used is Python. The libraries used are: pandas, seaborn, matplotlib and numpy<br>
-4> Jupyter Notebook is included in the     "Code" Folder: [Link to Jupyter Notebook](code/CustomerCouponAcceptance.jpynb)
+Dataset: Link to Coupons Dataset
 
-## Exploratory Data Analysis and Dataset Investigation:
-Snap Shot of the actuals : Columns or the Attributes in the Dataset -
-![image](https://github.com/user-attachments/assets/a4c88fa9-854e-4e16-a3eb-03e3f1882d9d)
+Contains 12,684 records and 26 attributes.
 
-#### Missing Data:
-This is the sbnapshot of the missing data -<br>
-![image](https://github.com/user-attachments/assets/ad3eee28-99b6-4b3c-a21e-febaa4153262)
-<br>
-As seen from above the car' column had higher percentage of missing data. And was not taken into consideration. For the rest of the Data column elements the most occuring data value appearing in the respective column was filled in.
-<br>
-#### Duplicate Data: 
-74 Duplicate Records were also removed.
-The final count of Dataset arrived at for analysis was : 12610
+Columns represent customer demographics, lifestyle habits, driving information, and coupon interaction outcomes.
 
-## General Data Visualizations
-Plot of Popularity of the Coupon itself.<br>
-![Image](graphplots/CouponTypes.png)
-<br>
-<br>
-What weather do people prefer when going out with coupons?<br>
-![Image](graphplots/Temperature.png)
-<br>
-## Data Summary Points
-#### General:
-Proportion of Total Observations who decided to accept the coupon were :  7157 which is 56.76% 
-#### Bar Coupon Acceptance Readout:
-* Acceptance rate for Bar coupons was found to be : **40.9%**
-* Acceptance rate from those who go to bar <=3 times a month : **37.05%**
-* Acceptance rate from those who go to the bar >3 times a month : **76.88%**
-* Drivers Over 25 who go to bar, their acceptance rate : **69.52%**
-* Acceptance rate of drivers that go to the bar at least once per month and have no kids : **71.32%**
-* Acceptance rates of those who go to bars more than once a month, had passengers that were not a kid, and were not widowed : **71.32%**
-* Acceptance rates of those who go to bars more than once a month and are under the age of 30 : **72.17%**
-* Acceptance rates of those who go to cheap restaurants more than 4 times a month and income is less than 50K : **45.34%**
-## Hypotheses
-We can hypothesize the following about drivers who accepted the bar coupons:
+This dataset provides a balanced mix of categorical and numerical features suitable for both descriptive and inferential analysis.
 
-* **Age Factor**                  : 72% of the young adults who are less than 30yrs frequent the bar often more than once a month, and they also willingly 
-                                    accept coupons
-* **Prefer Cheaper Places**       : People who make less income seems to prefer cheaper dining places
-* **Atleast 1 Bar visit a month** : Is primarily among those who don't have any kids - Kind of social animals
-* **Bar visits to Frequency**     : There is one more trait and thats to do with frequency of bar visits and the acceptance rate of coupons
-* **Occupation and Acceptance**   : People who do NOT fish, farm or are involved in forestery seem to lean towards accepting coupons 56.0%
-* **Drivers Over 25 and
-    compared to rest others**     : Not much of acceptance (33%)
-<br>
+Technology Stack:
 
-## Independent Investigation - Coffee House Coupon Acceptors 
+Programming Language: Python
 
-This provides analysis information and plots of customers who accepted Coffee House Coupons
-<br>
-<br>
-![Image](graphplots/CoffeeHouseAndAge.png)
+Libraries: pandas (data handling), numpy (numerical analysis), matplotlib & seaborn (visualizations)
 
-**A. Coffee House Coupons and Age Factor:** Looks like the category of people who accept coffee house coupons are more in the 20's. 
-<br>
-<br>
+Code Notebook: Analysis is documented in Jupyter Notebook, located in the Code folder: Link to Jupyter Notebook
 
-![Image](graphplots/CoffeeHouseAndOccupationMapping.png)
+Exploratory Data Analysis (EDA) and Dataset Inspection
 
-**B. Coffee House Coupons Acceptance and Occupation Factor:** Interestingly people with no or some college education, unemployed possibly seem to socialize a lot than the one with a bit of higher education, student community are also more on the acceptance side of the graph.
-<br>
-<br>
+The first step was to examine the dataset structure and attributes. A snapshot of the columns is shown below:
 
-![Image](graphplots/CoffeeHouseAndMaritalStats.png)
 
-**C. Coffee House Coupons Acceptance and Marital Factor:** Divorced and those with Widowed status look not to be socializing much or going out.
-<BR>
-<BR>
+Handling Missing Data
 
-![Image](graphplots/CoffeeHouseAndEducation.png)
+A careful assessment revealed missing values in several columns.
 
-**D. Coffee House Coupons Acceptance and Edcuation Factor:** More of the professional working group members seems to not accept coffee house coupons. Possible they prefer some other form of coupons.
-<BR>
-<BR>
-# Possible Next Steps:
-<br>
-1> Simplification of Data for easier analysis.<br>
-2> Some other data factors have not been used in the above analysis, like Destination, Location, Direction, <br>Time of day, Weather conditions to study how it may affect the   acceptance rate of the coupons.<br>
-3> Look for some other dependent datasets which may influence this dataset.<br>
-4> Are there any other external factors and models which needs to be accounted for?
+
+The car attribute had a high percentage of missing data, making it unsuitable for inclusion in further analysis.
+
+For the remaining attributes, missing values were imputed using the mode (most frequent value) strategy, which preserved the categorical structure of the dataset without significant information loss.
+
+Duplicate Records
+
+A total of 74 duplicate rows were detected and removed, leaving a final dataset size of 12,610 records for the core analysis.
+
+Visual Analysis of General Patterns
+
+Coupon Type Popularity
+This visualization illustrates which coupons were most frequently offered and accepted.
+
+
+Weather Preferences and Coupon Usage
+An analysis of weather patterns suggests that environmental conditions may influence coupon redemption decisions.
+
+
+Key Data Insights
+Overall Acceptance
+
+Out of the total observations, 7,157 customers (56.76%) accepted a coupon, indicating that more than half of participants responded positively to promotions.
+
+Bar Coupon Acceptance Breakdown
+
+The acceptance of Bar coupons displayed strong variation depending on demographic and behavioral factors:
+
+Overall Bar coupon acceptance rate: 40.9%
+
+Visitors to bars ≤3 times/month: 37.05%
+
+Visitors to bars >3 times/month: 76.88%
+
+Drivers aged >25 who visit bars: 69.52%
+
+Drivers without children visiting bars ≥1 time/month: 71.32%
+
+Bar-goers more than once/month, non-widowed, with no child passengers: 71.32%
+
+Individuals under 30 visiting bars more than once/month: 72.17%
+
+Low-income (<$50K) individuals frequenting cheap restaurants ≥4 times/month: 45.34%
+
+Hypotheses on Bar Coupon Acceptance
+
+Based on EDA, the following hypotheses can be proposed:
+
+Age Effect: Younger adults (particularly <30 years) who frequently socialize are significantly more inclined to accept Bar coupons (~72%).
+
+Economic Preferences: Lower-income individuals exhibit a stronger preference for cost-effective options, such as cheap restaurants or discounted bars.
+
+Lifestyle Patterns: Drivers without children and those who identify as more socially active show higher coupon acceptance rates.
+
+Behavioral Frequency: Coupon acceptance increases with the frequency of visits—regular customers are more open to deals.
+
+Occupational Influence: Customers not employed in fishing, farming, or forestry demonstrated higher acceptance (~56%), possibly tied to lifestyle differences.
+
+Age 25+ Decline: Acceptance among drivers aged >25 decreases considerably (~33%), suggesting a generational difference in responsiveness to promotional offers.
+
+Independent Analysis – Coffee House Coupon Acceptance
+
+A deeper dive was conducted into Coffee House coupon acceptance patterns, exploring correlations with demographic and lifestyle attributes.
+
+A. Coffee House Coupons & Age
+Acceptance is highest among individuals in their 20s, highlighting generational differences in café culture and socialization habits.
+
+
+B. Coffee House Coupons & Occupation/Education
+People with no/some college education or those unemployed show higher acceptance rates, indicating coffee houses may serve as affordable social hubs. Students also prominently accept these coupons.
+
+
+C. Coffee House Coupons & Marital Status
+Divorced and widowed individuals exhibit lower coupon acceptance, possibly due to different social engagement patterns.
+
+
+D. Coffee House Coupons & Education Level
+Professionals with higher education backgrounds are less likely to redeem coffee house coupons, possibly reflecting different preferences (e.g., fine dining or alternate leisure activities).
+
+
+Recommendations & Next Steps
+
+To build on these findings, several next steps are proposed:
+
+Feature Simplification: Streamline the dataset to reduce redundancy and improve model performance.
+
+Expanded Variable Analysis: Incorporate underutilized attributes (e.g., Destination, Location, Direction, Time of Day, Weather) to uncover deeper behavioral insights.
+
+External Data Integration: Merge with related datasets, such as customer income distributions or regional lifestyle trends, to provide broader context.
+
+Predictive Modeling: Develop classification models (e.g., logistic regression, decision trees, random forests) to predict coupon acceptance likelihood.
+
+Business Application: Translate findings into actionable marketing strategies—such as targeted promotions for younger adults, tailored bar offers for frequent socializers, and coffee house deals for students.
